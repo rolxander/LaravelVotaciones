@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Route::get('/votaciones', function () {
+//    return view('Votaciones.index');
+//});*/
+//Route::get('/votaciones','VotacionesController@index');
+Route::resource('votaciones','VotacionesController');
